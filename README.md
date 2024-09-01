@@ -3,10 +3,10 @@
 A Terraform module to create and manage Databricks Service Principals intended to run Databricks Jobs.
 
 ## Features
-- [X] Notebook Tasks
+- [X] Service Principal with Admin Permissions in a Workspace
 
 ## Planned Functionality
-- [] Limited permissions
+- [] More scoped and configurable permissions
 
 ## Usage
 
@@ -19,7 +19,7 @@ provider "databricks" {
 }
 
 module "databricks_service_principal_example" {
-  source = "github.com/SynaptiqAI/terraform-databricks-job?ref=v0.1.0"
+  source = "github.com/SynaptiqAI/terraform-databricks-service-principal?ref=v0.1.0"
 
   providers = {
     databricks     = databricks.workspace
@@ -35,4 +35,4 @@ module "databricks_service_principal_example" {
 ```
 
 ## License
-MIT Licensed. See (LICENSE](https://github.com/SynaptiqAI/terraform-databricks-job/blob/main/LICENSE) for full details.
+MIT Licensed. See (LICENSE](https://github.com/SynaptiqAI/terraform-databricks-service-principal/blob/main/LICENSE) for full details.
